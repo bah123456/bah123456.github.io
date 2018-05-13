@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+<div class="jd_layout">
+    <div class="jd_header" >
+        <div class="jd_header_box" id="jd_header_wrapper">
+            <a href="#" class="icon_logo"></a>
+            <form action="">
+                <span class="icon_search"></span>
+                <input type="search" placeholder="占位符">
+            </form>
+            <a href="#" class="login">登录</a>
+        </div>
+    </div>
+
+    <!--轮播图-->
+    <div class="jd_banner" id="jd_banner_wrapper">
+        <ul id="jd_banner_imgbox">
+            <li><img src="img/l1.jpg" alt=""></li>
+            <li><img src="img/l2.jpg" alt=""></li>
+            <li><img src="img/l3.jpg" alt=""></li>
+            <li><img src="img/l4.jpg" alt=""></li>
+            <li><img src="img/l5.jpg" alt=""></li>
+            <li><img src="img/l6.jpg" alt=""></li>
+            <li><img src="img/l7.jpg" alt=""></li>
+            <li><img src="img/l8.jpg" alt=""></li>
+            <li><img src="img/l1.jpg" alt=""></li>
+            <li><img src="img/l2.jpg" alt=""></li>
+        </ul>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <div class="jd_nav">
+        <ul>
+            <li><a href="#"><img src="./img/nav0.png" alt=""><p>分类查询</p></a></li>
+            <li><a href="#"><img src="./img/nav1.png" alt=""><p>分类查询</p></a></li>
+            <li><a href="#"><img src="./img/nav2.png" alt=""><p>分类查询</p></a></li>
+            <li><a href="#"><img src="./img/nav3.png" alt=""><p>分类查询</p></a></li>
+            <li><a href="#"><img src="./img/nav4.png" alt=""><p>分类查询</p></a></li>
+            <li><a href="#"><img src="./img/nav5.png" alt=""><p>分类查询</p></a></li>
+            <li><a href="#"><img src="./img/nav6.png" alt=""><p>分类查询</p></a></li>
+            <li><a href="#"><img src="./img/nav7.png" alt=""><p>分类查询</p></a></li>
+        </ul>
+    </div>
+</div>
+<main class="jd_product">
+    <section class="jd_product_box jd_secondKill">
+        <div class="product_top no_bor">
+            <div class="jd_secondKill_left">
+                <span class="sk_icon"></span>
+                <h4 class="sk_name">掌上秒杀</h4>
+                <div class="sk_time">
+                    <span class="num">0</span>
+                    <span class="num">0</span>
+                    <span class="str">:</span>
+                    <span class="num">0</span>
+                    <span class="num">0</span>
+                    <span class="str">:</span>
+                    <span class="num">0</span>
+                    <span class="num">0</span>
+                </div>
+            </div>
+            <div class="jd_secondKill_right">
+                <a href="">更多></a>
+            </div>
+        </div>
+        <!--三个商品-->
+        <div class="product_bot">
+            <ul class="clearfix">
+                <li>
+                    <a href="">
+                        <div class="img_box"><img src="img/detail02.jpg" alt=""/></div>
+                        <p class="now_price">&yen;20.00</p>
+                        <p class="old_price">&yen;200.00</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="img_box"><img src="img/detail02.jpg" alt=""/></div>
+                        <p class="now_price">&yen;20.00</p>
+                        <p class="old_price">&yen;200.00</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="img_box"><img src="img/detail02.jpg" alt=""/></div>
+                        <p class="now_price">&yen;20.00</p>
+                        <p class="old_price">&yen;200.00</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!---->
+    <section class="jd_product_box jd_pd">
+        <div class="product_top">
+            <h3>超值购</h3>
+        </div>
+        <div class="product_bot clearfix">
+            <a href="" class="p_left b_right"><img src="img/cp1.jpg" alt=""/></a>
+            <a href="" class="p_right b_bottom"><img src="img/cp2.jpg" alt=""/></a>
+            <a href="" class="p_right"><img src="img/cp3.jpg" alt=""/></a>
+        </div>
+    </section>
+    <section class="jd_product_box jd_pd">
+        <div class="product_top">
+            <h3>热门活动</h3>
+        </div>
+        <div class="product_bot clearfix">
+            <a href="" class="p_right b_left"><img src="img/cp4.jpg" alt=""/></a>
+            <a href="" class="p_left b_bottom"><img src="img/cp5.jpg" alt=""/></a>
+            <a href="" class="p_left"><img src="img/cp6.jpg" alt=""/></a>
+        </div>
+    </section>
+</main>
+</body>
+<script>
+    var jd_banner_imgbox = document.getElementById("jd_banner_imgbox");
+    var jdBannerWidth = jd_banner_imgbox.offsetWidth / 10;
+    console.log(jdBannerWidth);
+    var num = 0;
+
+    function autoplay() {
+        if (num === -jdBannerWidth * 8) {
+            num = 0;
+        }
+        num = num - 1;
+        jd_banner_imgbox.style.left = num + "px";
+        if (num % jdBannerWidth === 0) {
+            clearInterval(timer1);
+            timer2 = setTimeout(function () {
+                timer1 = setInterval("autoplay()", 1);
+            }, 3000);
+        }
+    }
+    var timer1 = setInterval("autoplay()", 1);
+</script>
+<script src="./js/index.js"></script>
+</html>
