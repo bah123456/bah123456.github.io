@@ -1,32 +1,19 @@
-.jd_layout{
-    /*width: 100%;*/
-    min-width: 300px;
-    max-width: 640px;
-    height: 1400px;
-    /*background-color: red;*/
-    margin: 0 auto;
-    position: relative;
-}
-.jd_header{
+.jd_header {
     width: 100%;
-    /*min-width: 300px;*/
-    /*max-width: 640px;*/
     height: 40px;
     position: fixed;
     left: 0;
     top: 0;
-    /*background-color: black;*/
-    z-index: 99;
 }
-.jd_header .jd_header_box{
+.jd_header .jd_header_box {
     min-width: 300px;
+    z-index: 1;
     max-width: 640px;
     height: 40px;
-    /*background-color: green;*/
-    margin: 0 auto;
     position: relative;
+    margin: 0 auto;
 }
-.jd_header .jd_header_box .icon_logo{
+.jd_header .jd_header_box .icon_logo {
     display: block;
     background-position: 0 -103px;
     width: 60px;
@@ -35,25 +22,23 @@
     top: 4px;
     left: 10px;
 }
-.jd_header .jd_header_box form{
+.jd_header .jd_header_box form {
     width: 100%;
     height: 40px;
     padding-left: 75px;
     padding-right: 55px;
     position: relative;
 }
-.jd_header .jd_header_box form .icon_search{
+.jd_header .jd_header_box form .icon_search {
     background-position: -60px -109px;
     width: 20px;
     height: 20px;
     display: block;
-
     position: absolute;
     top: 10px;
     left: 85px;
-
 }
-.jd_header .jd_header_box form input{
+.jd_header .jd_header_box form input {
     width: 100%;
     height: 30px;
     margin-top: 5px;
@@ -62,45 +47,44 @@
     -moz-border-radius: 15px;
     border-radius: 15px;
 }
-.jd_header .login{
+.jd_header .login {
     width: 50px;
     height: 40px;
     display: block;
     text-align: center;
-    line-height: 40px;
+    line-height: 42px;
     font-size: 15px;
-    color: #fff;
-
+    color: #fefefe;
     position: absolute;
     top: 0;
     right: 0;
 }
-/*轮播图样式设置开始*/
-.jd_banner{
+.jd_banner {
     min-width: 300px;
     max-width: 650px;
-     width: 100%;
-     overflow: hidden;
-     position: relative;
-    height: 20vw;
- }
-.jd_banner ul:first-child{
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    height: 49vw;
+}
+.jd_banner ul:first-child {
     width: 1000%;
     position: absolute;
     left: 0;
     top: 0;
 }
-.jd_banner ul:first-child li{
+.jd_banner ul:first-child li {
     width: 10%;
     float: left;
 }
-.jd_banner ul:first-child li img{
+
+.jd_banner ul:first-child li img {
     width: 100%;
     overflow: hidden;
     position: relative;
     margin: 0 auto;
 }
-.jd_banner ul:last-child{
+.jd_banner ul:last-child {
     width: 118px;
     height: 6px;
     position: absolute;
@@ -108,31 +92,28 @@
     margin-left: -59px;
     bottom: 10px;
 }
-
 .jd_banner ul:last-child li {
     width: 6px;
     height: 6px;
-    border: 1px solid #fff;
+    border: 1px solid #fefefe;
     border-radius: 3px;
     margin-left: 10px;
     float: left;
 }
-.jd_banner ul:last-child li:first-child{
+.jd_banner ul:last-child li:first-child {
     margin-left: 0;
 }
 
-.jd_banner ul:last-child li.now{
+.jd_banner ul:last-child li.now {
     background: #fff;
 }
-
-/*导航区域样式设置开始*/
 .jd_nav{
     height: 150px;
     width: 100%;
     padding: 0 3.125%;
     padding-top: 11px;
     border-bottom: 1px solid #e0e0e0;
-    background-color: #f5f5f5;
+    background-color: #f6f5f8;
 }
 .jd_nav ul{
     width: 100%;
@@ -156,18 +137,15 @@
 }
 .jd_nav ul li a p{
     font-size: 12px;
-    color: #666666;
+    color: #555555;
     margin-top: 6px;
 }
-/*掌上秒杀*/
 .jd_product{
     min-width: 300px;
     max-width: 640px;
-    height: 1020px;
     overflow: hidden;
-    position: absolute;
-    top: 60%;
-    left: 29%;
+    position: relative;
+    margin: 0 auto;
 }
 .jd_product .jd_product_box{
 
@@ -208,7 +186,7 @@
     float: left;
 }
 .jd_secondKill .jd_secondKill_left .sk_icon{
-    background: url("../img/seckill-icon.png") no-repeat;
+    background: url("../images/seckill-icon.png") no-repeat;
     background-size: 16px 20px;
     width: 16px;
     display: block;
